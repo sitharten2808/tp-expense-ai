@@ -162,7 +162,10 @@ function Landing() {
       {/* Footer */}
       <footer className="bg-navy text-navy-foreground mt-auto">
         <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-3">
-          <Logo />
+          <div className="flex items-center gap-1">
+            <span className="text-primary-foreground text-xl font-extrabold">TP</span>
+            <span className="text-white/90 text-xl font-semibold">SmartExpense</span>
+          </div>
           <p className="text-sm text-white/60">
             © 2025 TP Malaysia · Innovation Team · AI Intern Assessment Project
           </p>
