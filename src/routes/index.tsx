@@ -22,15 +22,6 @@ export const Route = createFileRoute("/")({
   component: Landing,
 });
 
-function Logo() {
-  return (
-    <div className="flex items-center gap-1 font-semibold tracking-tight">
-      <span className="text-primary text-2xl font-extrabold">TP</span>
-      <span className="text-foreground text-2xl">SmartExpense</span>
-    </div>
-  );
-}
-
 function Landing() {
   return (
     <div className="min-h-screen flex flex-col">
