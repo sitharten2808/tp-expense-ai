@@ -6,13 +6,13 @@ import { ScanLine, Languages, BarChart3, ArrowRight, Upload, Sparkles, CheckCirc
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "TP SmartExpense — Automate Expense Claims with AI" },
+      { title: "TP SmartReceipt — Automate Expense Claims with AI" },
       {
         name: "description",
         content:
           "Upload a receipt. Let AI extract the details. Review, edit, and submit in seconds. Built for TP Malaysia's Finance Team.",
       },
-      { property: "og:title", content: "TP SmartExpense — Automate Expense Claims with AI" },
+      { property: "og:title", content: "TP SmartReceipt — Automate Expense Claims with AI" },
       {
         property: "og:description",
         content: "AI-powered receipt-to-expense automation for TP Malaysia.",
@@ -30,11 +30,11 @@ function Landing() {
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-1 font-semibold tracking-tight">
             <span className="text-white text-2xl font-extrabold">TP</span>
-            <span className="text-white/90 text-2xl">SmartExpense</span>
+            <span className="text-white/90 text-2xl">SmartReceipt</span>
           </div>
           <Link to="/app">
             <Button variant="secondary" className="bg-white text-primary hover:bg-white/90">
-              Open App
+              Start Now
             </Button>
           </Link>
         </div>
@@ -45,14 +45,14 @@ function Landing() {
         <div className="max-w-7xl mx-auto px-6 pt-36 pb-28 md:pt-44 md:pb-36">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-3 py-1 text-xs text-white/80 mb-6">
-              <Sparkles className="h-3.5 w-3.5" /> Powered by AI · Built for TP Malaysia
+              <Sparkles className="h-3.5 w-3.5" /> Powered by AI 
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] tracking-tight">
-              Automate Your Expense Claims with AI
+              Automate Receipts Extraction with AI
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/75 max-w-2xl leading-relaxed">
               Upload a receipt. Let AI extract the details. Review, edit, and submit in
-              seconds. Built for TP Malaysia's Finance Team.
+              seconds. Built for TP Malaysia.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link to="/app">
@@ -93,7 +93,7 @@ function Landing() {
               {
                 icon: Languages,
                 title: "Multilingual Support",
-                desc: "Handles receipts in English, Bahasa Malaysia, and Chinese — perfect for TP Malaysia's diverse operations.",
+                desc: "Handles receipts in all kind of languages — perfect for TP Malaysia's diverse operations.",
               },
               {
                 icon: BarChart3,
@@ -155,7 +155,7 @@ function Landing() {
         <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-1">
             <span className="text-primary-foreground text-xl font-extrabold">TP</span>
-            <span className="text-white/90 text-xl font-semibold">SmartExpense</span>
+            <span className="text-white/90 text-xl font-semibold">SmartReceipt</span>
           </div>
           <p className="text-sm text-white/60">
             © 2025 TP Malaysia · Innovation Team · AI Intern Assessment Project
