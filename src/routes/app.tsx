@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCallback, useMemo, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { toast } from "sonner";
@@ -85,10 +85,10 @@ function AppShell() {
       {/* Sidebar */}
       <aside className="hidden md:flex w-64 shrink-0 flex-col bg-sidebar border-r border-sidebar-border">
         <div className="p-5 border-b border-sidebar-border">
-          <div className="flex items-center gap-1">
+          <Link to="/" className="flex items-center gap-1 hover:opacity-80 transition-opacity">
             <span className="text-primary text-xl font-extrabold">TP</span>
             <span className="text-sidebar-foreground text-xl font-semibold">SmartExpense</span>
-          </div>
+          </Link>
           <p className="text-xs text-muted-foreground mt-1">Finance Management System</p>
         </div>
         <nav className="p-3 flex-1">
